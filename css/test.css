@@ -1,0 +1,65 @@
+:root {
+  --btn-color: #f4aa0b;
+  --bg-color: #0a0909;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.landing-hero-section {
+  background: url(../images/landing-hero.jpg),url(../images/Rectangle\ 122.png);
+  background-size: cover;
+  background-position: 30% 60%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 26rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-landing-card {
+  background-color: white;
+  width: 22rem;
+  height: 18rem;
+  margin-left: 12rem;
+  padding: 1.4rem;
+  border-radius: 5px;
+}
+
+.landing-card-text {
+  text-align: left;
+}
+
+.landing-h1 {
+  font-size: 1.9rem;
+  padding-bottom: 0.8rem;
+}
+
+.landing-card-text {
+  font-size: 1rem;
+}
+
+.landing-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+}
+
+.landing-btn button {
+  width: 3.2rem;
+  height: 1.6rem;
+  font-size: 0.69rem;
+  color: white;
+  background-color: var(--btn-color);
+  outline: none;
+  border-radius: 8px;
+  border: none;
+}

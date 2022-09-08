@@ -12,6 +12,7 @@
 
 body{
     background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* ======Hero Section====== */
@@ -23,6 +24,7 @@ body{
     background-color: rgba(0, 29, 192, 0.2);
     background-repeat: no-repeat;
     height: 499px;
+    position: relative;
 }
 
 .hero-overlay{
@@ -31,10 +33,10 @@ body{
 }
 
 .hero-div {
-    width: 449px;
-    height: 290px;
+    width: 27rem;
+    height: 18.1rem;
     position: absolute;
-    top: 80px;
+    top: 6rem;
     left: 172px;
     bottom: 0;
     background-color: var(--cards);
@@ -44,12 +46,11 @@ body{
 
 .hero-div h1{
     font-family: 'Montserrat', sans-serif;
-    font-size: 31px;
+    font-size: 28px;
     margin: 15px 40px 12px 40px ;
 }
 
 .hero-div p{
-    font-family: 'Open Sans', sans-serif;
     margin: 18px 27px 12px 27px 
 }
 
@@ -64,7 +65,7 @@ body{
     border-radius: 8px;
     width: 100px;
     float: right;
-    margin: 10px 30px 0 0;
+    margin: 7px 30px 0 0;
 }
 
 .hero-div a:hover{
@@ -90,7 +91,7 @@ body{
 }
 
 .impact-min-div  {
-    width: 320px;
+    width: 20rem;
 }
 
 .impact-min-div img{
@@ -141,10 +142,12 @@ body{
 
 .feature-overlay h2{
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     letter-spacing: 0.25px;
     position:relative;
+
+    /* little manipulation */
+
     top:6rem;
     margin-top:8%;
 }
@@ -154,11 +157,12 @@ body{
     justify-content: space-around;
     align-items: center;
     margin-top:10rem;
+    width: 100%;
 }
 
 .feature-div {
-    width: 370px;
-    height: 220px;
+    width: 23.125rem;
+    height: 13.75rem;
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.14);
     border-radius: 12px;
@@ -231,12 +235,11 @@ body{
 
 .testimonial-container-div{
     background-color: rgba(255, 255, 255, 1);
-    ;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 449px;
+    width: 28.0625rem;
     box-shadow: 0px 9px 12px 1px rgba(0, 0, 0, 0.14);
     border-radius: 12px;
     transition: all 1s;
@@ -290,6 +293,7 @@ body{
     width: 360px;
     height: 278px;
 }
+
 .Volunteer-D-child h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -386,13 +390,112 @@ form .btn:hover{
     transform: scale(1.1);
 }
 
+@media only screen and (max-width: 1200px) {
+
+    /* ======Our Features section======= */
+
+    .feature-overlay h2{
+        margin-left: 200px;
+    }
+
+    .feature-div{
+        width: 22rem;
+    }
+
+    /* =====Testimonial section===== */
+
+    .testimonial h2{
+        margin: 0 400px;
+        margin-bottom: 30px;
+    }
+
+    .testimonial > p{
+        margin: 0 100px;
+        margin-bottom: 70px;
+    }
+}
+
+
   /* =======TABLET=VIEW====== */
+
+  @media only screen and (max-width: 900px) {
+
+    /* ======Hero Section====== */
+
+    .hero-div{
+        left: 100px;
+    }
+
+    /* =======impact section====== */
+
+     .impact h2{
+        margin-left: 70px;
+     }
+
+     .impact-div{
+        margin: 30px 50px 20px 50px;
+    }
+
+        .impact-min-div  {
+            width: 17.75rem;
+        }
+    
+    .impact-min-div img{
+        width: 16.125rem;
+        height: 11.25rem;
+    }
+
+    .impact a{
+        margin-right: 100px;
+    }
+    
+        /* ======Our Features section======= */
+    
+        .feature-overlay h2{
+            margin-left: 200px;
+        }
+    
+        .feature-div{
+            width: 16rem;
+            height: 11.75rem;
+        }
+
+        .feature-div img{
+            margin-left: 45%;
+            margin-top: 1.5em;
+        }
+
+        .feature-div p{
+            font-size: 14px;
+        }
+    
+        /* =====Testimonial section===== */
+    
+        .testimonial h2{
+            margin: 0 280px;
+            margin-bottom: 30px;
+        }
+    
+        .testimonial > p{
+            margin: 0 70px;
+        }
+
+        .testimonial-container-div{
+            width: 24.0625rem;
+        }
+
+        .testimonial-container-div:first-child{
+            margin-right: 30px;
+        }
+    }
+    
 
   @media only screen and (max-width: 768px) {
     
     /* ======Hero Section====== */
 
     .main-hero{
+        width: 100%;
         background-size: 100% 100%;
         height: 420px;
     }
@@ -467,8 +570,8 @@ form .btn:hover{
     .feature-overlay h2{
         font-size: 26px;
         top: 3rem;
-        left: 2em;
         margin-top:6%;
+        right: 2rem;
     }
 
     .feature-container{
@@ -506,6 +609,11 @@ form .btn:hover{
         padding: 0 10px;
     }
 
+    .feature-div:hover{
+        transform: scaleY(1.1);
+        cursor: pointer;
+    }
+
 
     /* =====Testimonial section===== */
 
@@ -522,7 +630,7 @@ form .btn:hover{
     }
 
     .testimonial-container-div:first-child{
-        margin-right: 20px;
+        margin-right: 50px;
     }
 
     .testimonial-container-div p{
@@ -556,144 +664,185 @@ form .btn:hover{
   @media only screen and (max-width: 428px) {
     
     /* ======Hero Section====== */
-    .main-hero {
-        background-size: cover;
-        background-position: center ;
-        background-repeat: no-repeat;
-        height: 499px;
+
+
+        .main-hero{
+            background-size: cover;
+        }
+
+        .hero-div{
+            left: 40px;
+        }
+
+
+        .hero-div{
+            width: 16rem;
+            height: 22rem;
+        }
+
+        .hero-div h1{
+            font-size: 27px;
+            margin: 15px 40px 12px 30px ;
+        }
+
+        .hero-div p{
+            margin: 18px 15px 12px 15px 
+        }
+
+
+     /* ======impact section======  */
+
+
+     .impact h2{
+        font-size: 27px;
+        margin-left: 0;
+        text-align: center;
+    
     }
-    .hero-overlay{
-        height: 499px;
-        background-color: rgba(0, 29, 192, 0.2);
-    }
-    .hero-div {
-        width: 260px;
-        height: 340px;
-        position: absolute;
-        top: 80px;
-        left: 70px;
-        bottom: 0;
-    }
-    .hero-div p{
-        width:220px;
-    }
-    /* =======impact section====== */
+
     .impact-div{
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-        margin: 20px 50px 20px 50px;
+        flex-direction: column;
+        margin-bottom: 10px;
     }
-    
+
     .impact-min-div  {
-        width: 320px;
+        width: 20rem;
+        margin-bottom: 20px;
     }
-    
+
     .impact-min-div img{
-        width: 300px;
+        width: 306px;
         height: 238px;
         border-radius: 12px;
     }
-    
-    .impact-min-div p{
-        margin-top: 15px;
-        margin-bottom:15px;
+
+    .impact a{
+        margin-bottom: 30px;
+        
     }
+
+    
     /* ======Our Features section======= */
-    .feature-container{
-        display: block;
-        justify-content: space-around;
-        margin-top:5rem;
-        margin-left: 40px;
-        }
+
     .our-features{
-        margin: 100px 0;
-        background-size:cover;
+        height: 970px;
+        background-size: cover;
         background-position: center;
-        width: 100%;
-        height: 750px;
+        background-repeat: no-repeat;
+        margin: 70px 0;
+    }
+
+    .feature-overlay {
+        height: 970px;
+    }
+
+    .feature-container{
+        flex-direction: column;
+    }
+
+    .feature-overlay h2{
+        font-size: 27px;
+        letter-spacing: 0.25px;
+        position:relative;
+
+        /* little manipulation */
+
+        top: 10;
+        right: 70px;
+        text-align: justify;
+    }
+
+    .feature-div {
+        width: 22rem;
+        height: 13.75rem;
+        margin-bottom: 40px;
+    }
+
+    .feature-div:hover{
+        transform: scale(1.1);
+    }
+
+    .feature-div:first-child{
+        margin-left: 0px;
     }
     
-    .feature-overlay {
-        width: 100%;
-        height: 750px;
+    .feature-div:last-child{
+        margin-right: 0px;
     }
-    .feature-div:first-child{
-        margin-left: 8px;
-    }
-    .feature-div {
-        margin-bottom:20px;
-        width:92%;
-        padding:10px;
-        margin-right:20px;
-    }
-     .feature-div p{
-        width:290px;
-     }  
+    
+
+   
     
     /* =====Testimonial section===== */
+
+    .testimonial{
+        margin-bottom: 50px;
+    }
+
     .testimonial h2{
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-        letter-spacing: 0.5;
-        width:300px;
-        margin: 0 68px;
+        margin: 0 45px;
         margin-bottom: 20px;
     }
     
     .testimonial > p{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        letter-spacing: 0.5;
+        text-align: center;
         margin: 0 68px;
         margin-bottom: 20px;
     }
     
     .testimonial-container{
-        display:block;
-        justify-content: center;
-        align-items: center;
-        margin: 30px;
+       flex-direction: column;
     }
+
     .testimonial-container-div{
         width:358px;
-        margin-bottom:20px;
+        margin-bottom: 40px;
+    }
+
+    .testimonial-container-div:first-child{
+        margin-right: 0px;
+    }
+
+    .testimonial-container-div p{
+        margin: 0 50px 15px 50px;
     }
     
     /* ======Volunteer section====== */
+
+
     .Volunteer{
-        height:60%;
+        height: 620px;
+        margin-bottom: 0;
     }
+
     .Volunteer-container {
-        display: block;
-        justify-content: center;
-        align-items: center;
+       flex-direction: column;
     }
     
     .Volunteer-D-child{
-        margin: 60px 0 0 0;
+        margin: 0px 0 0 0;
     }
     
     .Volunteer-D-child img{
-        width: 360px;
-        height: 278px;
-        margin-left:20px;
         margin-top:35px;
-    }
-    #form{
-        margin-left:20px;
     }
     
     form {
-        width: 370px;
-    }
-   
-    .constant small{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        visibility: hidden;
+        width: 320px;
     } 
 
+    form .btn {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .feature-overlay h2{
+        right: 100px;
+    }
+
+    .feature-div{
+        width: 20rem;
+    }
 }

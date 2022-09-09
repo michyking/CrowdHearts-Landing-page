@@ -18,7 +18,7 @@ body{
 /* ======Hero Section====== */
 
 .main-hero {
-    background-image: url(../images/people.jpg);
+    background-image: url(../img/people.jpg);
     background-size: cover;
     background-position: center top;
     background-color: rgba(0, 29, 192, 0.2);
@@ -34,7 +34,7 @@ body{
 
 .hero-div {
     width: 27rem;
-    height: 18.1rem;
+    height: 18.4rem;
     position: absolute;
     top: 6rem;
     left: 172px;
@@ -51,7 +51,8 @@ body{
 }
 
 .hero-div p{
-    margin: 18px 27px 12px 27px 
+    margin: 18px 27px 12px 27px;
+    line-height: 1.5;
 }
 
 .hero-div a{
@@ -127,36 +128,33 @@ body{
 /* ======Our Features section======= */
 
 .our-features{
-    margin: 100px 0;
-    background-image: url(../images/workers.jpg);
+    margin: 90px 0;
+    background-image: url(../img/workers.jpg);
     background-size: cover;
     width: 100%;
     height: 550px;
+    position: relative;
 }
 
 .feature-overlay {
     width: 100%;
     height: 550px;
-    background-color: rgba(102, 111, 168, 0.35);
+    background-color: rgba(238, 239, 245, 0.35);
 }
 
-.feature-overlay h2{
+.features-h2{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     letter-spacing: 0.25px;
-    position:relative;
-
-    /* little manipulation */
-
-    top:6rem;
-    margin-top:8%;
+    padding-top: 80px;
 }
 
 .feature-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top:10rem;
+    margin-top:5rem;
     width: 100%;
 }
 
@@ -218,10 +216,11 @@ body{
 }
 
 .testimonial > p{
-    text-align: center;
+    text-align: justify;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     letter-spacing: 0.5;
+    line-height: 1.5;
     margin: 0 270px;
     margin-bottom: 50px;
 }
@@ -381,22 +380,17 @@ form .btn {
     font-size: 13px;
     font-weight: 500;
     margin: 10px 0 25px  0;
-    transition: all 1s;
 } 
 
 form .btn:hover{
     cursor: pointer;
     color: var(--footer-btn);
-    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1200px) {
 
     /* ======Our Features section======= */
 
-    .feature-overlay h2{
-        margin-left: 200px;
-    }
 
     .feature-div{
         width: 22rem;
@@ -451,13 +445,13 @@ form .btn:hover{
     
         /* ======Our Features section======= */
     
-        .feature-overlay h2{
-            margin-left: 200px;
+        .features-h2{
+            font-size: 28px;
         }
     
         .feature-div{
-            width: 16rem;
-            height: 11.75rem;
+            width: 17rem;
+            height: 12.75rem;
         }
 
         .feature-div img{
@@ -467,6 +461,14 @@ form .btn:hover{
 
         .feature-div p{
             font-size: 14px;
+        }
+
+        .feature-div:first-child{
+            margin-left: 10px;
+        }
+        
+        .feature-div:last-child{
+            margin-right: 10px;
         }
     
         /* =====Testimonial section===== */
@@ -506,7 +508,7 @@ form .btn:hover{
 
     .hero-div{
         width: 400px;
-        height: 270px;
+        height: 290px;
         top: 50px;
         left: 70px;
     }
@@ -558,7 +560,7 @@ form .btn:hover{
     /* ======Our Features section======= */
 
     .our-features{
-        background-image: url(../images/business-team-success.jpg);
+        background-image: url(../img/business-team-success.jpg);
         height: 389px;
     }
 
@@ -567,15 +569,13 @@ form .btn:hover{
         
     }
 
-    .feature-overlay h2{
-        font-size: 26px;
-        top: 3rem;
-        margin-top:6%;
-        right: 2rem;
+    .features-h2{
+        font-size: 28px;
+        padding-top: 50px;
     }
 
     .feature-container{
-        margin-top:6rem;
+        margin-top:3rem;
     }
 
     .feature-div{
@@ -686,7 +686,7 @@ form .btn:hover{
         }
 
         .hero-div p{
-            margin: 18px 15px 12px 15px 
+            margin: 15px 0 10px 25px 
         }
 
 
@@ -740,18 +740,7 @@ form .btn:hover{
         flex-direction: column;
     }
 
-    .feature-overlay h2{
-        font-size: 27px;
-        letter-spacing: 0.25px;
-        position:relative;
-
-        /* little manipulation */
-
-        top: 10;
-        right: 70px;
-        text-align: justify;
-    }
-
+   
     .feature-div {
         width: 22rem;
         height: 13.75rem;
